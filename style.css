@@ -22,3 +22,16 @@
     border-color: black;
     border-radius: 50px;
 }
+
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+#btnPad {
+    border: 5px;
+    border-style: solid;
+    border-color: black;
+    
+}
