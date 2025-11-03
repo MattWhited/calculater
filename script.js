@@ -9,15 +9,15 @@ let operator;
 
 document.getElementById('zero').onclick = function() {
     console.log('0')
-    results.innerHTML = '0'
+    results.innerHTML += '0'
 }
 
 document.getElementById('one').onclick = function() {
-
+    results.innerHTML += '1'
 }
 
 document.getElementById('two').onclick = function() {
-
+    results.innerHTML += '2'
 }
 
 document.getElementById('three').onclick = function() {
@@ -49,7 +49,7 @@ document.getElementById('nine').onclick = function() {
 }
 
 document.getElementById('clear').onclick = function() {
-
+    results.innerHTML = ''
 }
 
 document.getElementById('plus').onclick = function() {
