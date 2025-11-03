@@ -8,7 +8,8 @@ let operator;
 // get all of the buttons
 
 document.getElementById('zero').onclick = function() {
-
+    console.log('0')
+    results.innerHTML = '0'
 }
 
 document.getElementById('one').onclick = function() {
@@ -68,5 +69,9 @@ document.getElementById('multiply').onclick = function() {
 }
 
 document.getElementById('equals').onclick = function() {
+
+}
+
+let operate = () => {
 
 }
