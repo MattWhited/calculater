@@ -1,4 +1,9 @@
-let results = document.getElementById('resultsBox')
+// declaring variables
+let results = document.getElementById('resultsBox');
+let digitOne;
+let digitTwo;
+let operator;
+
 
 // get all of the buttons
 
