@@ -1,1 +1,67 @@
-console.log('JuneBugs')
+let results = document.getElementById('resultsBox')
+
+// get all of the buttons
+
+document.getElementById('zero').onclick = function() {
+
+}
+
+document.getElementById('one').onclick = function() {
+
+}
+
+document.getElementById('two').onclick = function() {
+
+}
+
+document.getElementById('three').onclick = function() {
+
+}
+
+document.getElementById('four').onclick = function() {
+
+}
+
+document.getElementById('five').onclick = function() {
+
+}
+
+document.getElementById('six').onclick = function() {
+
+}
+
+document.getElementById('seven').onclick = function() {
+
+}
+
+document.getElementById('eight').onclick = function() {
+
+}
+
+document.getElementById('nine').onclick = function() {
+
+}
+
+document.getElementById('clear').onclick = function() {
+
+}
+
+document.getElementById('plus').onclick = function() {
+
+}
+
+document.getElementById('minus').onclick = function() {
+
+}
+
+document.getElementById('divide').onclick = function() {
+
+}
+
+document.getElementById('multiply').onclick = function() {
+
+}
+
+document.getElementById('equals').onclick = function() {
+
+}
