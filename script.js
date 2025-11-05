@@ -2,8 +2,12 @@
 let results = document.getElementById('resultsBox');
 let digitOne = '3';
 let digitTwo = '4';
-let operator = '+';
 let currentNum = '';
+
+let sum = Number(digitOne) + Number(digitTwo);
+let difference = Number(digitOne) - Number(digitTwo);
+let product = Number(digitOne) * Number(digitTwo);
+let quotient = Number(digitOne) / Number(digitTwo);
 
 
 // get all of the buttons
@@ -83,6 +87,7 @@ let operate = () => {
 }
 
 console.log(operate())
+
 
 //store a number
         // write out a number
