@@ -1,6 +1,6 @@
 // declaring variables
 let results = document.getElementById('resultsBox');
-let digitOne = '3';
+let digitOne = '';
 let digitTwo = '4';
 let currentNum = '';
 
@@ -13,8 +13,8 @@ let quotient = Number(digitOne) / Number(digitTwo);
 // get all of the buttons
 
 document.getElementById('zero').onclick = function() {
-    console.log('0')
     results.innerHTML += '0'
+    currentNum += '0'
 }
 
 document.getElementById('one').onclick = function() {
@@ -30,31 +30,38 @@ document.getElementById('two').onclick = function() {
 }
 
 document.getElementById('three').onclick = function() {
-
+    results.innerHTML += '3'
+    return currentNum += '3'
 }
 
 document.getElementById('four').onclick = function() {
-
+    results.innerHTML += '4'
+    currentNum += '4'
 }
 
 document.getElementById('five').onclick = function() {
-
+    results.innerHTML += '5'
+    currentNum += '5'
 }
 
 document.getElementById('six').onclick = function() {
-
+    results.innerHTML += '6'
+    currentNum += '6'
 }
 
 document.getElementById('seven').onclick = function() {
-
+    results.innerHTML += '7'
+    currentNum += '7'
 }
 
 document.getElementById('eight').onclick = function() {
-
+    results.innerHTML += '8'
+    currentNum += '8'
 }
 
 document.getElementById('nine').onclick = function() {
-
+    results.innerHTML += '9'
+    currentNum += '9'
 }
 
 document.getElementById('clear').onclick = function() {
@@ -63,7 +70,15 @@ document.getElementById('clear').onclick = function() {
 }
 
 document.getElementById('plus').onclick = function() {
-
+    // store current num in digit one
+    currentNum = digitOne
+    // selecting operator
+        // send sum to current equation
+    // clearing out results box
+    currentEquation = sum
+    console.log(currentNum);
+    console.log(digitOne);
+    console.log(currentEquation);
 }
 
 document.getElementById('minus').onclick = function() {
@@ -82,11 +97,12 @@ document.getElementById('equals').onclick = function() {
 
 }
 
+let currentEquation = ''
+
 let operate = () => {
-    return Number(digitOne) + Number(digitTwo)
+    
 }
 
-console.log(operate())
 
 
 //store a number
