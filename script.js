@@ -3,11 +3,11 @@ let results = document.getElementById('resultsBox');
 let digitOne = '';
 let digitTwo = '4';
 let currentNum = '';
+let currentEquation = '';
 
-let sum = Number(digitOne) + Number(digitTwo);
-let difference = Number(digitOne) - Number(digitTwo);
-let product = Number(digitOne) * Number(digitTwo);
-let quotient = Number(digitOne) / Number(digitTwo);
+let operator = '';
+
+
 
 
 // get all of the buttons
@@ -31,7 +31,7 @@ document.getElementById('two').onclick = function() {
 
 document.getElementById('three').onclick = function() {
     results.innerHTML += '3'
-    return currentNum += '3'
+    currentNum += '3'
 }
 
 document.getElementById('four').onclick = function() {
@@ -71,14 +71,10 @@ document.getElementById('clear').onclick = function() {
 
 document.getElementById('plus').onclick = function() {
     // store current num in digit one
-    currentNum = digitOne
+    digitOne = currentNum
     // selecting operator
         // send sum to current equation
-    // clearing out results box
-    currentEquation = sum
-    console.log(currentNum);
-    console.log(digitOne);
-    console.log(currentEquation);
+    operator = '+'
 }
 
 document.getElementById('minus').onclick = function() {
@@ -95,9 +91,15 @@ document.getElementById('multiply').onclick = function() {
 
 document.getElementById('equals').onclick = function() {
 
+    if (operator = '+') {
+        console.log(Number(digitOne) + Number(digitTwo));
+    } 
+    //let difference = Number(digitOne) - Number(digitTwo);
+    //let product = Number(digitOne) * Number(digitTwo);
+    //let quotient = Number(digitOne) / Number(digitTwo); 
 }
 
-let currentEquation = ''
+
 
 let operate = () => {
     
