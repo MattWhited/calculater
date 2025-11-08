@@ -1,14 +1,8 @@
 // declaring variables
 let results = document.getElementById('resultsBox');
 let digitOne = '';
-let digitTwo = '4';
 let currentNum = '';
-let currentEquation = '';
-
 let operator = '';
-
-
-
 
 // get all of the buttons
 
@@ -20,13 +14,11 @@ document.getElementById('zero').onclick = function() {
 document.getElementById('one').onclick = function() {
     results.innerHTML += '1'
     currentNum += '1'
-    console.log(currentNum)
 }
 
 document.getElementById('two').onclick = function() {
     results.innerHTML += '2'
     currentNum += '2'
-    console.log(currentNum)
 }
 
 document.getElementById('three').onclick = function() {
@@ -70,58 +62,47 @@ document.getElementById('clear').onclick = function() {
 }
 
 document.getElementById('plus').onclick = function() {
-    // store current num in digit one
+    results.innerHTML += '+'
     digitOne = currentNum
-    // selecting operator
-        // send sum to current equation
     operator = '+'
+    currentNum = ''
 }
 
 document.getElementById('minus').onclick = function() {
-
+    results.innerHTML += '-'
+    digitOne = currentNum
+    operator = '-'
+    currentNum = ''
 }
 
 document.getElementById('divide').onclick = function() {
-
+    results.innerHTML += '/'
+    digitOne = currentNum
+    operator = '/'
+    currentNum = ''
 }
 
 document.getElementById('multiply').onclick = function() {
-
+    results.innerHTML += '*'
+    digitOne = currentNum
+    operator = '*'
+    currentNum = ''
 }
 
+// equals button runs the math
 document.getElementById('equals').onclick = function() {
-
-    if (operator = '+') {
-        console.log(Number(digitOne) + Number(digitTwo));
-    } 
-    //let difference = Number(digitOne) - Number(digitTwo);
-    //let product = Number(digitOne) * Number(digitTwo);
-    //let quotient = Number(digitOne) / Number(digitTwo); 
-}
-
-
-
-let operate = () => {
     
+    if (operator == '+') {
+        results.innerHTML = (Number(digitOne) + Number(currentNum));
+    } else if (operator == '-') {
+        results.innerHTML = (Number(digitOne) - Number(currentNum))
+    } else if (operator == '*') {
+        results.innerHTML = (Number(digitOne) * Number(currentNum))
+    } else if (operator == '/') {
+        results.innerHTML = (Number(digitOne) / Number(currentNum))
+    } else {
+        console.log('ERROR')
+    }
+
+    currentNum = results.textContent
 }
-
-
-
-//store a number
-        // write out a number
-        // store that in current number
-        // when you select operator
-        // store current number in digit one
-        // set current number back to empty
-    // store an operator
-    // store a second number
-        // write out a number
-        // store it in current number
-        // when you click equals
-        // store that second number in digit two
-        // return the results of...
-        // (digitOne)(operator)(digitTwo)
-    // run that function
-    // return that number to the results box
-    // store that new number as your first number again
-    // clear out the operator and the second number
